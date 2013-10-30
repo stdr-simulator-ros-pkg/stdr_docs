@@ -17,13 +17,14 @@
 - Sensors are compiled into libraries
 - SDF/XML/yaml files for parameters
 - [S],[R],[G] must be implemented with pluginlib
-- [R] node will have the form of nodelet as well
+- [R] will have the form of node & nodelet
 - [R] will handle the sensors (distributed functionality)
 - STDR must support command line only functionality 
-- Navigation/Path planner stacks will be additionally provided
+- Navigation/Path planner stacks will be additionally provided in seperate repos
 - [S] must spawn robots
 - [S] must kill robots
 - [S] must change the place of robots
+- [S][G] must create/remove RFID tags from space
 - [G] must spawn,kill,change place of robots through [S]
 - [G] subscribes to [R] topics and shows information
 - [G] could be created as plugin in rqt
