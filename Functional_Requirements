@@ -38,3 +38,4 @@
 - [G] can have implementations in QT or Python
 - Maps can be .png/.jpg/.bmp grayscale files
 - [R] provides ROS std messages
+- [R] can provide semi-autonomous funcctionality through [G] with custom path planners
