@@ -12,15 +12,23 @@ Use Case 1 : Initialize bare [S] & [G]
 1.3.A If [S] not initialized [G] waits
 1.4 [S] sends information to [G] when initialized
 -------------------------------------------------------------------------------
-Use Case 2 : Initialise [G] with running [S]
+Use Case 2 : Initialize [G] with running [S]
 
 2.1 [G] performs handshake with [S]
-2.2 
+2.2 [G] asks if map is available from [S]
+2.3 [G] asks for available topics/robots from [S]
 -------------------------------------------------------------------------------
-Use Case 2 : Load map from [G]
-Precondition: UC1
+Use Case 3 : Load map from [G]
+Precondition: UC1 or UC2
 
-2.1 [U] loads a map in [G]
-2.2 [G] informs [S] for loading map
-2.3 [G] subscribes to [S] OGM topic 
+3.1 [U] loads a map in [G]
+3.2 [G] informs [S] for loading map
+3.3 [G] subscribes to [S] OGM topic 
+-------------------------------------------------------------------------------
+Use Case 4 : Start Robot from  [S]
+
+4.1 [S] starts with an argument describing [R] (sdf/yaml)
+4.2 [S] spawns a [R] node with the params from yaml/sdf
+4.3 [S] gives [R] the topics to which it must publish 
+4.4 [S] starts [R] functionality
 -------------------------------------------------------------------------------
