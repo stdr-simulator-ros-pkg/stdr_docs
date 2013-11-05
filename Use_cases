@@ -1,0 +1,26 @@
+* [S] - Server
+* [G] - GUI
+* [R] - Robot
+* [U] - User
+* UC - Use Case
+-------------------------------------------------------------------------------
+Use Case 1 : Initialize bare [S] & [G]
+
+1.1 [S] is initialized
+1.2 [G] is initialized
+1.3 [G] performs handshaking with [S]
+1.3.A If [S] not initialized [G] waits
+1.4 [S] sends information to [G] when initialized
+-------------------------------------------------------------------------------
+Use Case 2 : Initialise [G] with running [S]
+
+2.1 [G] performs handshake with [S]
+2.2 
+-------------------------------------------------------------------------------
+Use Case 2 : Load map from [G]
+Precondition: UC1
+
+2.1 [U] loads a map in [G]
+2.2 [G] informs [S] for loading map
+2.3 [G] subscribes to [S] OGM topic 
+-------------------------------------------------------------------------------
