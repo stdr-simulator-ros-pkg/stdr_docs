@@ -1,0 +1,20 @@
+* server listens to /stdr/filepath of type "configureMsg.msg"
+
+configureMsg.msg:
+  string path
+  enum type
+    MAP
+    ROBOT
+    RFID
+    GENERAL
+    
+* Gui listens to 
+  /stdr/configure for robot configuration (including topics/robot characteristics etc)
+  /stdr/map for occupancyGrid from server
+  /stdr/robot for robotMsg f rom server
+  /stdr/rfid for rfids from server
+  /stdr/robots/0,1,2,.../
+                        laser
+                        pose (or by tf)
+                        rfids (in range)
+                        speeds
