@@ -1,0 +1,1 @@
+- git: {local-name: stdr_simulator, uri: 'https://github.com/stdr-simulator-ros-pkg/stdr_simulator.git', version: hydro-devel}
